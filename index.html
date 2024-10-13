@@ -15,43 +15,48 @@
     <div class="container mt-5">
       <h2 class="mb-4">Enviar un Correo</h2>
       <form>
-        <div class="mb-3">
+        <div class="mb-3" id="divCorreo">
           <label for="correo" class="form-label">Correo</label>
           <input
             type="email"
             class="form-control"
             id="correo"
+            name="correo"
             placeholder="Añada tu correo"
           />
         </div>
-        <div class="mb-3">
-          <label for="destino" class="form-label">Para</label>
+        <div class="mb-3" id="divDestinatario">
+          <label for="destino" class="form-label">Destinatario</label>
           <input
             type="email"
             class="form-control"
             id="destino"
+            name="destino"
             placeholder="Añada un correo de destino"
           />
         </div>
-        <div class="mb-3">
+        <div class="mb-3" id="divAsunto">
           <label for="asunto" class="form-label">Asunto</label>
           <input
             type="text"
             class="form-control"
             id="asunto"
+            name="asunto"
             placeholder="Añada un asunto"
           />
         </div>
-        <div class="mb-3">
+        <div class="mb-3" id="divDescripcion">
           <label for="descripcion" class="form-label">Descripción</label>
           <textarea
             class="form-control"
             id="descripcion"
-            rows="3"
+            name="descripcion"
             placeholder="Añada una descripción"
           ></textarea>
         </div>
-        <button type="submit" class="btn btn-dark">Enviar</button>
+        <button type="submit" id="enviar" name="enviar" class="btn btn-dark">
+          Enviar
+        </button>
       </form>
     </div>
     <script src="./js/app.js"></script>
